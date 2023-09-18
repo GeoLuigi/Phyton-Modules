@@ -1,13 +1,14 @@
 """
-Single node class
+Double node class
 """
 
-class SingleNode:
+class DoubleNode:
     """
-    Node class definition
+    Double node class definition
     """
     def __init__(self,data = None):
         self.data = data
+        self.prev = None
         self.next = None
 
     def __str__(self):

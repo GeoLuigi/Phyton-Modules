@@ -1,8 +1,12 @@
 """
-Linked list module definition
+Singly Linked List Module
+
+This module defines a Singly Linked List (SLL) data structure, which consists
+of nodes with a single next pointer. The SLL can be traversed forward, and it
+supports various insertion and deletion operations.
 """
 
-from python_modules.data_structures.single_node import Node
+from python_modules.data_structures.single_node import SingleNode
 
 class SinglyLinkedList:
     """
@@ -29,7 +33,7 @@ class SinglyLinkedList:
         """
         Insert a node at the head of the list method.
         """
-        new_node = Node(data)
+        new_node = SingleNode(data)
         new_node.next = self.head
         self.head = new_node
 
@@ -37,7 +41,7 @@ class SinglyLinkedList:
         """
         Insert a node at the end of the list method.
         """
-        new_node = Node(data)
+        new_node = SingleNode(data)
 
         # Check if list is empty or not
         if self.head is None:
@@ -55,7 +59,7 @@ class SinglyLinkedList:
         if index == 1:
             self.insert_at_beg(data)
         else:
-            new_node = Node(data)
+            new_node = SingleNode(data)
             current_node = self.head
 
             position = 1
