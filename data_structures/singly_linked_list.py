@@ -2,16 +2,7 @@
 Linked list module definition
 """
 
-class Node:
-    """
-    Node class definition
-    """
-    def __init__(self,data = None):
-        self.data = data
-        self.next = None
-
-    def __str__(self):
-        return str(self.data)
+from python_modules.data_structures.single_node import Node
 
 class SinglyLinkedList:
     """
