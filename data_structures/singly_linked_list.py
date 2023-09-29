@@ -6,7 +6,7 @@ of nodes with a single next pointer. The SLL can be traversed forward, and it
 supports various insertion and deletion operations.
 """
 
-from python_modules.data_structures.single_node import SingleNode
+from data_structures.single_node import SingleNode
 
 class SinglyLinkedList:
     """

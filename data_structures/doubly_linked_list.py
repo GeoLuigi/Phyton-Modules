@@ -6,7 +6,7 @@ of nodes that have both next and previous pointers. The DLL can be traversed
 forward and backward and supports various insertion and deletion operations.
 """
 
-from python_modules.data_structures.double_node import DoubleNode
+from data_structures.double_node import DoubleNode
 
 class DoublyLinkedList:
     """
